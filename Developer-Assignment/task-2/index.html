@@ -1,0 +1,1773 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Book a free orthopaedic consultation at OrthoNow. Expert knee, back &amp; spine specialists. 9 clinics in Bengaluru, Hyderabad &amp; Chennai. Slot confirmed in 2 hours." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://orthonow.in/consultation" />
+  <title>Book a Free Orthopaedic Consultation — OrthoNow</title>
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://orthonow.in/consultation" />
+  <meta property="og:title"       content="Book a Free Orthopaedic Consultation — OrthoNow" />
+  <meta property="og:description" content="Expert knee, back &amp; spine specialists across 9 clinics in Bengaluru, Hyderabad &amp; Chennai. First consultation free. Slot confirmed in 2 hours." />
+  <meta property="og:site_name"   content="OrthoNow Healthcare" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary" />
+  <meta name="twitter:title"       content="Book a Free Orthopaedic Consultation — OrthoNow" />
+  <meta name="twitter:description" content="Expert orthopaedic care across 9 clinics in Bengaluru, Hyderabad &amp; Chennai. First consultation free." />
+
+  <!-- Schema.org — MedicalOrganization + FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "MedicalOrganization",
+        "@id": "https://orthonow.in/#organization",
+        "name": "OrthoNow Healthcare Pvt. Ltd.",
+        "url": "https://orthonow.in",
+        "telephone": "+918047094709",
+        "description": "Expert orthopaedic care — knee replacement, back &amp; spine, sports injuries — across 9 clinics in Bengaluru, Hyderabad, and Chennai.",
+        "medicalSpecialty": "https://schema.org/Orthopedic",
+        "areaServed": [
+          { "@type": "City", "name": "Bengaluru" },
+          { "@type": "City", "name": "Hyderabad" },
+          { "@type": "City", "name": "Chennai" }
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Bengaluru",
+          "addressRegion": "Karnataka",
+          "addressCountry": "IN"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.8",
+          "reviewCount": "20000",
+          "bestRating": "5"
+        }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://orthonow.in/consultation",
+        "url": "https://orthonow.in/consultation",
+        "name": "Book a Free Orthopaedic Consultation — OrthoNow",
+        "description": "Book a free orthopaedic consultation at OrthoNow. Expert knee, back &amp; spine specialists. 9 clinics in Bengaluru, Hyderabad &amp; Chennai.",
+        "isPartOf": { "@id": "https://orthonow.in/#organization" }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Is the first orthopaedic consultation at OrthoNow really free?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Your first consultation with an OrthoNow specialist is completely free. Book online and our team will confirm your slot within 2 hours."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which cities does OrthoNow operate in?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "OrthoNow has 9 clinics across Bengaluru, Hyderabad, and Chennai."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What conditions does OrthoNow treat?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "OrthoNow specialists treat knee replacement, back and spine conditions, sports injuries (ACL/PCL), hip replacement, arthroscopy, and non-surgical pain relief including PRP therapy."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <!--
+    GTM IMPLEMENTATION NOTE:
+    Replace GTM-XXXXXXX with the client's GTM container ID.
+    The snippet below is intentionally commented out to keep this
+    file framework-independent and demo-ready.
+
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+  -->
+
+  <style>
+    /* ============================================================
+       DESIGN TOKENS
+       Single source of truth for all colours, spacing, and type.
+       Change a token here and every component updates.
+    ============================================================ */
+    :root {
+      --clr-primary:       #1B4F72;
+      --clr-primary-dark:  #154360;
+      --clr-primary-light: #1A6090;
+      --clr-accent:        #C0392B;
+      --clr-accent-hover:  #A93226;
+      --clr-success:       #1E8449;
+      --clr-success-bg:    #EAFAF1;
+      --clr-text:          #1A1A2E;
+      --clr-text-muted:    #5D6D7E;
+      --clr-bg:            #F4F8FD;
+      --clr-white:         #FFFFFF;
+      --clr-border:        #D6E4F0;
+      --clr-hero-bg:       #0D2E4A;
+      --clr-error:         #C0392B;
+      --clr-error-bg:      #FDEDEC;
+
+      --font-system: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-lg: 16px;
+
+      --shadow-sm:  0 1px 4px rgba(0, 0, 0, 0.08);
+      --shadow-md:  0 4px 16px rgba(0, 0, 0, 0.10);
+      --shadow-lg:  0 8px 32px rgba(0, 0, 0, 0.14);
+      --shadow-xl:  0 16px 48px rgba(0, 0, 0, 0.18);
+
+      --transition-fast: 0.15s ease;
+      --transition-base: 0.22s ease;
+
+      --max-width: 1120px;
+      --header-h:  60px;
+    }
+
+    /* ============================================================
+       RESET & BASE
+    ============================================================ */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      font-family: var(--font-system);
+      color: var(--clr-text);
+      background-color: var(--clr-bg);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      /* Reserve space at the bottom for the sticky CTA bar on mobile */
+      padding-bottom: 70px;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    ul { list-style: none; }
+    img { max-width: 100%; display: block; }
+    button, input, select { font-family: inherit; }
+    button { cursor: pointer; border: none; background: none; }
+
+    /* Screen-reader only — keep elements accessible but invisible */
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    .container {
+      width: 100%;
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* ============================================================
+       HEADER
+    ============================================================ */
+    .site-header {
+      height: var(--header-h);
+      background: var(--clr-primary);
+      position: sticky;
+      top: 0;
+      z-index: 500;
+      box-shadow: var(--shadow-md);
+    }
+
+    .header-inner {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    /* Logo */
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--clr-white);
+    }
+
+    .brand-icon {
+      width: 34px;
+      height: 34px;
+      background: var(--clr-accent);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .brand-name {
+      font-size: 1.18rem;
+      font-weight: 800;
+      letter-spacing: -0.4px;
+    }
+
+    .brand-tagline {
+      font-size: 0.68rem;
+      color: rgba(255, 255, 255, 0.55);
+      letter-spacing: 0.5px;
+      display: none; /* shown on wider screens */
+    }
+
+    /* Header call CTA */
+    .header-call {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      color: var(--clr-white);
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 50px;
+      padding: 8px 16px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      transition: background var(--transition-fast), border-color var(--transition-fast);
+    }
+
+    .header-call:hover,
+    .header-call:focus-visible {
+      background: rgba(255, 255, 255, 0.22);
+      border-color: rgba(255, 255, 255, 0.4);
+    }
+
+    .header-call:focus-visible { outline: 2px solid var(--clr-white); outline-offset: 2px; }
+
+    /* ============================================================
+       HERO
+    ============================================================ */
+    .hero {
+      background: var(--clr-hero-bg);
+      background-image: linear-gradient(140deg, #0A2236 0%, #1B4F72 55%, #1A6090 100%);
+      color: var(--clr-white);
+      padding: 44px 0 52px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 36px;
+      align-items: start;
+    }
+
+    /* ── Hero copy ── */
+    .hero-copy { }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(192, 57, 43, 0.18);
+      border: 1px solid rgba(192, 57, 43, 0.45);
+      color: #F1948A;
+      font-size: 0.73rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: 5px 13px;
+      border-radius: 50px;
+      margin-bottom: 22px;
+    }
+
+    .hero-title {
+      font-size: clamp(1.7rem, 5.5vw, 2.8rem);
+      font-weight: 800;
+      line-height: 1.18;
+      letter-spacing: -0.5px;
+      margin-bottom: 18px;
+    }
+
+    .hero-title-highlight {
+      color: #7EC8F4;
+      display: block;
+    }
+
+    .hero-subtitle {
+      font-size: clamp(0.92rem, 2.4vw, 1.05rem);
+      color: rgba(255, 255, 255, 0.78);
+      line-height: 1.75;
+      margin-bottom: 30px;
+      max-width: 540px;
+    }
+
+    .hero-checklist {
+      display: flex;
+      flex-direction: column;
+      gap: 11px;
+    }
+
+    .hero-checklist-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.9rem;
+      color: rgba(255, 255, 255, 0.82);
+    }
+
+    .check-icon {
+      width: 20px;
+      height: 20px;
+      background: rgba(126, 200, 244, 0.18);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      color: #7EC8F4;
+    }
+
+    /* ── Booking card ── */
+    .booking-card {
+      background: var(--clr-white);
+      border-radius: var(--radius-lg);
+      padding: 30px 26px;
+      box-shadow: var(--shadow-xl);
+      color: var(--clr-text);
+    }
+
+    .card-title {
+      font-size: 1.12rem;
+      font-weight: 800;
+      color: var(--clr-primary);
+      margin-bottom: 3px;
+    }
+
+    .card-subtitle {
+      font-size: 0.82rem;
+      color: var(--clr-text-muted);
+      margin-bottom: 24px;
+    }
+
+    /* Form fields */
+    .form-row { margin-bottom: 16px; }
+
+    .form-label {
+      display: block;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: #2C3E50;
+      margin-bottom: 6px;
+      letter-spacing: 0.1px;
+    }
+
+    .form-label-req {
+      color: var(--clr-accent);
+      margin-left: 2px;
+    }
+
+    .form-input,
+    .form-select {
+      display: block;
+      width: 100%;
+      padding: 11px 14px;
+      border: 1.5px solid var(--clr-border);
+      border-radius: var(--radius-sm);
+      font-size: 0.95rem;
+      color: var(--clr-text);
+      background: #FAFCFF;
+      transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+      -webkit-appearance: none;
+      appearance: none;
+    }
+
+    .form-input::placeholder { color: #A9B7C6; }
+
+    .form-input:focus,
+    .form-select:focus {
+      outline: none;
+      border-color: var(--clr-primary);
+      box-shadow: 0 0 0 3px rgba(27, 79, 114, 0.14);
+      background: var(--clr-white);
+    }
+
+    /* Indicates a validation error on the field */
+    .form-input[aria-invalid="true"],
+    .form-select[aria-invalid="true"] {
+      border-color: var(--clr-error);
+      background: var(--clr-error-bg);
+    }
+
+    /* Wrapper to add the custom dropdown arrow */
+    .select-wrap {
+      position: relative;
+    }
+
+    .select-wrap::after {
+      content: '';
+      position: absolute;
+      right: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 0;
+      height: 0;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-top: 6px solid #7F8C8D;
+      pointer-events: none;
+    }
+
+    /* Inline validation message */
+    .field-error {
+      display: none;
+      font-size: 0.76rem;
+      color: var(--clr-error);
+      margin-top: 5px;
+      font-weight: 500;
+    }
+
+    .field-error.visible { display: block; }
+
+    /* Submit button */
+    .btn-submit {
+      display: block;
+      width: 100%;
+      padding: 14px 20px;
+      background: var(--clr-accent);
+      color: var(--clr-white);
+      font-size: 0.98rem;
+      font-weight: 700;
+      border-radius: var(--radius-sm);
+      border: none;
+      cursor: pointer;
+      letter-spacing: 0.2px;
+      margin-top: 8px;
+      transition: background var(--transition-fast), transform var(--transition-fast), box-shadow var(--transition-fast);
+    }
+
+    .btn-submit:hover,
+    .btn-submit:focus-visible {
+      background: var(--clr-accent-hover);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 14px rgba(192, 57, 43, 0.35);
+    }
+
+    .btn-submit:active { transform: translateY(0); box-shadow: none; }
+
+    .btn-submit:focus-visible { outline: 2px solid var(--clr-primary); outline-offset: 2px; }
+
+    .btn-submit:disabled {
+      opacity: 0.65;
+      cursor: not-allowed;
+      transform: none;
+    }
+
+    .form-note {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 0.73rem;
+      color: #95A5A6;
+      margin-top: 11px;
+      justify-content: center;
+    }
+
+    /* ── Thank-you state (hidden until form submit) ── */
+    .thankyou-state {
+      display: none;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    .thankyou-state.active { display: block; }
+
+    .thankyou-check {
+      width: 68px;
+      height: 68px;
+      background: var(--clr-success-bg);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 18px;
+    }
+
+    .thankyou-title {
+      font-size: 1.18rem;
+      font-weight: 800;
+      color: var(--clr-success);
+      margin-bottom: 10px;
+    }
+
+    .thankyou-body {
+      font-size: 0.9rem;
+      color: var(--clr-text-muted);
+      line-height: 1.7;
+      margin-bottom: 16px;
+    }
+
+    .thankyou-ref {
+      font-size: 0.76rem;
+      color: #AAB4BE;
+      padding: 8px 14px;
+      background: var(--clr-bg);
+      border-radius: var(--radius-sm);
+      display: inline-block;
+    }
+
+    /* ============================================================
+       TRUST BAR (below hero on mobile, beside it on desktop)
+    ============================================================ */
+    .trust-bar {
+      background: var(--clr-white);
+      border-bottom: 1px solid var(--clr-border);
+      padding: 18px 0;
+    }
+
+    .trust-bar-inner {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px 24px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--clr-text-muted);
+    }
+
+    .trust-item-icon { color: var(--clr-primary); flex-shrink: 0; }
+
+    /* ============================================================
+       STATS SECTION
+    ============================================================ */
+    .stats-section {
+      background: var(--clr-white);
+      padding: 56px 0;
+    }
+
+    .section-eyebrow {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.4px;
+      color: var(--clr-accent);
+      margin-bottom: 10px;
+    }
+
+    .section-title {
+      font-size: clamp(1.3rem, 4vw, 1.9rem);
+      font-weight: 800;
+      color: var(--clr-primary);
+      line-height: 1.3;
+      margin-bottom: 40px;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+
+    .stat-card {
+      background: var(--clr-bg);
+      border: 1px solid var(--clr-border);
+      border-radius: var(--radius-md);
+      padding: 22px 18px;
+      text-align: center;
+    }
+
+    .stat-icon-wrap {
+      width: 46px;
+      height: 46px;
+      background: rgba(27, 79, 114, 0.09);
+      border-radius: var(--radius-md);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 12px;
+      color: var(--clr-primary);
+    }
+
+    .stat-number {
+      font-size: 1.9rem;
+      font-weight: 800;
+      color: var(--clr-primary);
+      line-height: 1;
+      margin-bottom: 5px;
+    }
+
+    .stat-label {
+      font-size: 0.79rem;
+      color: var(--clr-text-muted);
+      line-height: 1.4;
+    }
+
+    /* ============================================================
+       SPECIALTIES
+    ============================================================ */
+    .specialties-section {
+      background: var(--clr-bg);
+      padding: 56px 0;
+    }
+
+    .specialty-list {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+      margin-top: 32px;
+    }
+
+    .specialty-card {
+      background: var(--clr-white);
+      border: 1px solid var(--clr-border);
+      border-radius: var(--radius-md);
+      padding: 16px 18px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      transition: box-shadow var(--transition-fast), border-color var(--transition-fast);
+    }
+
+    .specialty-card:hover {
+      box-shadow: var(--shadow-sm);
+      border-color: #A9CCE3;
+    }
+
+    .specialty-icon-wrap {
+      width: 42px;
+      height: 42px;
+      background: rgba(27, 79, 114, 0.09);
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      color: var(--clr-primary);
+    }
+
+    .specialty-name {
+      font-size: 0.93rem;
+      font-weight: 700;
+      color: var(--clr-text);
+    }
+
+    .specialty-desc {
+      font-size: 0.78rem;
+      color: var(--clr-text-muted);
+      margin-top: 2px;
+    }
+
+    /* ============================================================
+       WHY ORTHONOW
+    ============================================================ */
+    .why-section {
+      background: var(--clr-white);
+      padding: 56px 0;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+      margin-top: 36px;
+    }
+
+    .feature-card {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      padding: 20px;
+      background: var(--clr-bg);
+      border: 1px solid var(--clr-border);
+      border-radius: var(--radius-md);
+    }
+
+    .feature-icon-wrap {
+      width: 46px;
+      height: 46px;
+      background: rgba(27, 79, 114, 0.09);
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      color: var(--clr-primary);
+    }
+
+    .feature-title {
+      font-size: 0.93rem;
+      font-weight: 700;
+      color: var(--clr-text);
+      margin-bottom: 4px;
+    }
+
+    .feature-desc {
+      font-size: 0.82rem;
+      color: var(--clr-text-muted);
+      line-height: 1.55;
+    }
+
+    /* ============================================================
+       CLINIC LOCATIONS
+    ============================================================ */
+    .clinics-section {
+      background: var(--clr-bg);
+      padding: 56px 0;
+    }
+
+    .clinics-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      margin-top: 28px;
+    }
+
+    .clinic-pill {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--clr-white);
+      border: 1px solid var(--clr-border);
+      border-radius: var(--radius-sm);
+      padding: 11px 14px;
+      font-size: 0.83rem;
+      font-weight: 500;
+    }
+
+    .clinic-pill-icon { color: var(--clr-primary); flex-shrink: 0; }
+
+    .clinic-pill-city {
+      font-size: 0.7rem;
+      color: #95A5A6;
+      display: block;
+    }
+
+    /* ============================================================
+       SECOND CTA BANNER
+    ============================================================ */
+    .cta-banner {
+      background: linear-gradient(135deg, var(--clr-primary) 0%, var(--clr-primary-light) 100%);
+      color: var(--clr-white);
+      padding: 56px 0;
+      text-align: center;
+    }
+
+    .cta-banner-title {
+      font-size: clamp(1.3rem, 4vw, 1.9rem);
+      font-weight: 800;
+      margin-bottom: 12px;
+    }
+
+    .cta-banner-body {
+      font-size: 0.98rem;
+      color: rgba(255, 255, 255, 0.8);
+      margin-bottom: 32px;
+      max-width: 460px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.65;
+    }
+
+    .cta-banner-actions {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .btn-cta-primary {
+      display: inline-block;
+      padding: 14px 36px;
+      background: var(--clr-accent);
+      color: var(--clr-white);
+      font-size: 0.98rem;
+      font-weight: 700;
+      border-radius: var(--radius-sm);
+      border: none;
+      cursor: pointer;
+      transition: background var(--transition-fast), transform var(--transition-fast);
+      letter-spacing: 0.2px;
+    }
+
+    .btn-cta-primary:hover { background: var(--clr-accent-hover); transform: translateY(-1px); }
+    .btn-cta-primary:focus-visible { outline: 2px solid var(--clr-white); outline-offset: 2px; }
+
+    .btn-cta-call {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 13px 28px;
+      color: rgba(255, 255, 255, 0.88);
+      font-size: 0.93rem;
+      font-weight: 600;
+      border-radius: var(--radius-sm);
+      border: 1.5px solid rgba(255, 255, 255, 0.3);
+      transition: border-color var(--transition-fast), background var(--transition-fast);
+    }
+
+    .btn-cta-call:hover {
+      border-color: rgba(255, 255, 255, 0.65);
+      background: rgba(255, 255, 255, 0.06);
+    }
+
+    .btn-cta-call:focus-visible { outline: 2px solid var(--clr-white); outline-offset: 2px; }
+
+    /* ============================================================
+       FOOTER
+    ============================================================ */
+    .site-footer {
+      background: #091B2A;
+      color: rgba(255, 255, 255, 0.5);
+      padding: 32px 0;
+      text-align: center;
+      font-size: 0.8rem;
+    }
+
+    .footer-brand {
+      font-size: 1rem;
+      font-weight: 800;
+      color: var(--clr-white);
+      margin-bottom: 6px;
+    }
+
+    .footer-cities {
+      margin-bottom: 14px;
+      font-size: 0.78rem;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 6px 20px;
+      margin-bottom: 18px;
+    }
+
+    .footer-links a {
+      color: rgba(255, 255, 255, 0.45);
+      transition: color var(--transition-fast);
+    }
+
+    .footer-links a:hover { color: var(--clr-white); }
+
+    .footer-legal { font-size: 0.73rem; color: rgba(255, 255, 255, 0.28); }
+
+    /* ============================================================
+       STICKY MOBILE CTA BAR
+       Hidden on tablet+ where the hero form is always visible.
+    ============================================================ */
+    .sticky-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 600;
+      background: var(--clr-white);
+      border-top: 1px solid var(--clr-border);
+      box-shadow: 0 -4px 18px rgba(0, 0, 0, 0.10);
+      padding: 10px 16px;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .btn-sticky-book {
+      flex: 1;
+      padding: 12px 14px;
+      background: var(--clr-accent);
+      color: var(--clr-white);
+      font-size: 0.88rem;
+      font-weight: 700;
+      border-radius: var(--radius-sm);
+      border: none;
+      cursor: pointer;
+      transition: background var(--transition-fast);
+    }
+
+    .btn-sticky-book:hover { background: var(--clr-accent-hover); }
+    .btn-sticky-book:focus-visible { outline: 2px solid var(--clr-primary); outline-offset: 2px; }
+
+    .btn-sticky-call {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      padding: 12px 16px;
+      background: var(--clr-primary);
+      color: var(--clr-white);
+      font-size: 0.88rem;
+      font-weight: 700;
+      border-radius: var(--radius-sm);
+      white-space: nowrap;
+      transition: background var(--transition-fast);
+    }
+
+    .btn-sticky-call:hover { background: var(--clr-primary-dark); }
+    .btn-sticky-call:focus-visible { outline: 2px solid var(--clr-primary); outline-offset: 2px; }
+
+    /* ============================================================
+       RESPONSIVE — TABLET  (min-width: 640px)
+    ============================================================ */
+    @media (min-width: 640px) {
+      .specialty-list { grid-template-columns: repeat(2, 1fr); }
+      .clinics-grid   { grid-template-columns: repeat(3, 1fr); }
+    }
+
+    /* ============================================================
+       RESPONSIVE — DESKTOP  (min-width: 768px)
+       Hero form becomes two-column. Sticky bar disappears.
+    ============================================================ */
+    @media (min-width: 768px) {
+      body { padding-bottom: 0; }
+
+      .brand-tagline { display: block; }
+
+      .hero { padding: 64px 0 72px; }
+
+      .hero-grid {
+        grid-template-columns: 1fr 420px;
+        gap: 56px;
+        align-items: center;
+      }
+
+      .hero-checklist { flex-direction: row; flex-wrap: wrap; gap: 12px 28px; }
+
+      .stats-grid   { grid-template-columns: repeat(4, 1fr); }
+      .features-grid { grid-template-columns: repeat(2, 1fr); }
+      .specialty-list { grid-template-columns: repeat(2, 1fr); }
+      .clinics-grid  { grid-template-columns: repeat(3, 1fr); }
+
+      .cta-banner-actions { flex-direction: row; justify-content: center; }
+
+      /* Hide sticky bar — the booking form is always in view on desktop */
+      .sticky-bar { display: none; }
+    }
+
+    /* ============================================================
+       RESPONSIVE — LARGE DESKTOP  (min-width: 1024px)
+    ============================================================ */
+    @media (min-width: 1024px) {
+      .specialty-list { grid-template-columns: repeat(3, 1fr); }
+      .features-grid  { grid-template-columns: repeat(3, 1fr); }
+      .clinics-grid   { grid-template-columns: repeat(4, 1fr); }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ============================================================
+       SITE HEADER
+  ============================================================ -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+
+      <a href="#" class="brand" aria-label="OrthoNow — Go to homepage">
+        <div class="brand-icon" aria-hidden="true">
+          <!-- Simplified plus / cross icon representing healthcare -->
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+            <rect x="7" y="1" width="4" height="16" rx="2" fill="#fff"/>
+            <rect x="1" y="7" width="16" height="4" rx="2" fill="#fff"/>
+          </svg>
+        </div>
+        <div>
+          <div class="brand-name">OrthoNow</div>
+          <div class="brand-tagline">Expert Orthopaedic Care</div>
+        </div>
+      </a>
+
+      <a
+        href="tel:+918047094709"
+        class="header-call"
+        id="js-header-call"
+        aria-label="Call OrthoNow on 080 4709 4709"
+      >
+        <!-- Phone icon -->
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.22 2.18 2 2 0 012.18 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 7.09a16 16 0 006 6l.55-.55a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"/>
+        </svg>
+        <span>9898324234</span>
+      </a>
+
+    </div>
+  </header>
+
+  <!-- ============================================================
+       MAIN CONTENT
+  ============================================================ -->
+  <main id="main-content">
+
+    <!-- ── HERO ── -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="container hero-grid">
+
+        <!-- Left: campaign copy -->
+        <div class="hero-copy">
+          <div class="hero-badge" role="note" aria-label="Limited offer">
+            <!-- Star icon -->
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+            </svg>
+            Free Consultation — Limited Slots This Week
+          </div>
+
+          <h1 class="hero-title" id="hero-heading">
+            Stop Living With
+            <span class="hero-title-highlight">Knee &amp; Back Pain</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            Get an expert orthopaedic opinion from a senior specialist —
+            without the 3-week hospital queue. 9 clinics across Bengaluru,
+            Hyderabad &amp; Chennai. Walk in or book online in 60 seconds.
+          </p>
+
+          <ul class="hero-checklist" aria-label="Key benefits">
+            <li class="hero-checklist-item">
+              <span class="check-icon" aria-hidden="true">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </span>
+              Same-day appointments available
+            </li>
+            <li class="hero-checklist-item">
+              <span class="check-icon" aria-hidden="true">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </span>
+              Senior specialists only — no registrars
+            </li>
+            <li class="hero-checklist-item">
+              <span class="check-icon" aria-hidden="true">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </span>
+              Confirmed in under 2 hours
+            </li>
+            <li class="hero-checklist-item">
+              <span class="check-icon" aria-hidden="true">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </span>
+              Cashless insurance accepted
+            </li>
+          </ul>
+        </div>
+
+        <!-- Right: booking form card -->
+        <div class="booking-card" role="region" aria-labelledby="form-card-heading">
+
+          <!-- ── Form state ── -->
+          <div id="js-form-state">
+            <h2 class="card-title" id="form-card-heading">Book Your Free Consultation</h2>
+            <p class="card-subtitle">Our team will confirm your slot within 2 hours.</p>
+
+            <form
+              id="js-consult-form"
+              novalidate
+              aria-label="Orthopaedic consultation booking form"
+            >
+
+              <div class="form-row">
+                <label class="form-label" for="f-name">
+                  Full Name<span class="form-label-req" aria-hidden="true">*</span>
+                </label>
+                <input
+                  class="form-input"
+                  type="text"
+                  id="f-name"
+                  name="name"
+                  placeholder="Rahul Sharma"
+                  autocomplete="name"
+                  required
+                  aria-required="true"
+                  aria-describedby="f-name-err"
+                />
+                <span id="f-name-err" class="field-error" role="alert" aria-live="polite"></span>
+              </div>
+
+              <div class="form-row">
+                <label class="form-label" for="f-phone">
+                  Mobile Number<span class="form-label-req" aria-hidden="true">*</span>
+                </label>
+                <input
+                  class="form-input"
+                  type="tel"
+                  id="f-phone"
+                  name="phone"
+                  placeholder="+91 98765 43210"
+                  autocomplete="tel"
+                  inputmode="tel"
+                  required
+                  aria-required="true"
+                  aria-describedby="f-phone-err"
+                />
+                <span id="f-phone-err" class="field-error" role="alert" aria-live="polite"></span>
+              </div>
+
+              <div class="form-row">
+                <label class="form-label" for="f-clinic">
+                  Preferred Clinic<span class="form-label-req" aria-hidden="true">*</span>
+                </label>
+                <div class="select-wrap">
+                  <select
+                    class="form-select"
+                    id="f-clinic"
+                    name="clinic_preference"
+                    required
+                    aria-required="true"
+                    aria-describedby="f-clinic-err"
+                  >
+                    <option value="" disabled selected>Select your nearest clinic</option>
+                    <optgroup label="Bengaluru">
+                      <option value="Bengaluru - Koramangala">Koramangala, Bengaluru</option>
+                      <option value="Bengaluru - Whitefield">Whitefield, Bengaluru</option>
+                      <option value="Bengaluru - Jayanagar">Jayanagar, Bengaluru</option>
+                      <option value="Bengaluru - HSR Layout">HSR Layout, Bengaluru</option>
+                    </optgroup>
+                    <optgroup label="Hyderabad">
+                      <option value="Hyderabad - Banjara Hills">Banjara Hills, Hyderabad</option>
+                      <option value="Hyderabad - Kondapur">Kondapur, Hyderabad</option>
+                      <option value="Hyderabad - Secunderabad">Secunderabad, Hyderabad</option>
+                    </optgroup>
+                    <optgroup label="Chennai">
+                      <option value="Chennai - Adyar">Adyar, Chennai</option>
+                      <option value="Chennai - Anna Nagar">Anna Nagar, Chennai</option>
+                    </optgroup>
+                  </select>
+                </div>
+                <span id="f-clinic-err" class="field-error" role="alert" aria-live="polite"></span>
+              </div>
+
+              <button
+                type="submit"
+                class="btn-submit"
+                id="js-submit-btn"
+                aria-label="Submit consultation booking form"
+              >
+                Book My Free Consultation →
+              </button>
+
+              <p class="form-note" aria-label="Privacy note">
+                <!-- Lock icon -->
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                  <path d="M7 11V7a5 5 0 0110 0v4"/>
+                </svg>
+                Your details are safe. No spam, ever.
+              </p>
+
+            </form>
+          </div>
+
+          <!-- ── Thank-you state (shown after successful submit) ── -->
+          <div
+            id="js-thankyou-state"
+            class="thankyou-state"
+            role="status"
+            aria-live="polite"
+            aria-label="Booking request received"
+          >
+            <div class="thankyou-check" aria-hidden="true">
+              <!-- Checkmark icon -->
+              <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#1E8449" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+            </div>
+            <h2 class="thankyou-title">You're all set, <span id="js-ty-name"></span>!</h2>
+            <p class="thankyou-body">
+              Our team will call you on <strong id="js-ty-phone"></strong> within
+              2 hours to confirm your appointment at <strong id="js-ty-clinic"></strong>.
+            </p>
+            <span class="thankyou-ref">Ref: <strong id="js-ty-ref"></strong></span>
+          </div>
+
+        </div>
+        <!-- /booking-card -->
+
+      </div>
+    </section>
+    <!-- /hero -->
+
+    <!-- ── TRUST BAR ── -->
+    <div class="trust-bar" role="complementary" aria-label="Trust signals">
+      <div class="container">
+        <ul class="trust-bar-inner" aria-label="OrthoNow credentials">
+          <li class="trust-item">
+            <svg class="trust-item-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            9 Clinics, 3 Cities
+          </li>
+          <li class="trust-item">
+            <svg class="trust-item-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            4.8★ Google Rating
+          </li>
+          <li class="trust-item">
+            <svg class="trust-item-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+            20,000+ Patients
+          </li>
+          <li class="trust-item">
+            <svg class="trust-item-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            NABH Accredited
+          </li>
+          <li class="trust-item">
+            <svg class="trust-item-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            Confirmed in &lt;2 Hours
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ── STATS ── -->
+    <section class="stats-section" aria-labelledby="stats-heading">
+      <div class="container">
+        <p class="section-eyebrow">By the numbers</p>
+        <h2 class="section-title" id="stats-heading">
+          South India's Most Trusted<br>Orthopaedic Network
+        </h2>
+
+        <ul class="stats-grid" aria-label="OrthoNow key statistics" role="list">
+          <li class="stat-card" role="listitem">
+            <div class="stat-icon-wrap" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            </div>
+            <div class="stat-number">9</div>
+            <div class="stat-label">Clinics across<br>3 cities</div>
+          </li>
+          <li class="stat-card" role="listitem">
+            <div class="stat-icon-wrap" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+            </div>
+            <div class="stat-number">20K+</div>
+            <div class="stat-label">Patients treated<br>successfully</div>
+          </li>
+          <li class="stat-card" role="listitem">
+            <div class="stat-icon-wrap" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <div class="stat-number">4.8★</div>
+            <div class="stat-label">Average rating<br>across all clinics</div>
+          </li>
+          <li class="stat-card" role="listitem">
+            <div class="stat-icon-wrap" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div class="stat-number">2 hrs</div>
+            <div class="stat-label">Appointment<br>confirmation promise</div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ── SPECIALTIES ── -->
+    <section class="specialties-section" aria-labelledby="specialties-heading">
+      <div class="container">
+        <p class="section-eyebrow">What we treat</p>
+        <h2 class="section-title" id="specialties-heading">
+          Conditions Our Specialists<br>See Every Day
+        </h2>
+
+        <ul class="specialty-list" aria-label="Orthopaedic specialties at OrthoNow" role="list">
+          <li class="specialty-card" role="listitem">
+            <div class="specialty-icon-wrap" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 00-3 3v7H6a3 3 0 000 6h12a3 3 0 000-6h-3V5a3 3 0 00-3-3z"/></svg>
+            </div>
+            <div>
+              <div class="specialty-name">Knee Replacement</div>
+              <div class="specialty-desc">Total &amp; partial arthroplasty, revision surgeries</div>
+            </div>
+          </li>
+          <li class="specialty-card" role="listitem">
+            <div class="specialty-icon-wrap" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+            </div>
+            <div>
+              <div class="specialty-name">Back &amp; Spine Care</div>
+              <div class="specialty-desc">Disc herniation, sciatica, spondylosis</div>
+            </div>
+          </li>
+          <li class="specialty-card" role="listitem">
+            <div class="specialty-icon-wrap" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            </div>
+            <div>
+              <div class="specialty-name">Sports Injuries</div>
+              <div class="specialty-desc">ACL/PCL tears, ligament &amp; tendon repair</div>
+            </div>
+          </li>
+          <li class="specialty-card" role="listitem">
+            <div class="specialty-icon-wrap" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M12 14v8"/><path d="M9 19h6"/></svg>
+            </div>
+            <div>
+              <div class="specialty-name">Hip Replacement</div>
+              <div class="specialty-desc">Minimally invasive total hip arthroplasty</div>
+            </div>
+          </li>
+          <li class="specialty-card" role="listitem">
+            <div class="specialty-icon-wrap" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <div>
+              <div class="specialty-name">Arthroscopy</div>
+              <div class="specialty-desc">Keyhole surgery for knee, shoulder &amp; ankle joints</div>
+            </div>
+          </li>
+          <li class="specialty-card" role="listitem">
+            <div class="specialty-icon-wrap" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+            </div>
+            <div>
+              <div class="specialty-name">Non-Surgical Pain Relief</div>
+              <div class="specialty-desc">PRP therapy, physiotherapy &amp; guided joint injections</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ── WHY ORTHONOW ── -->
+    <section class="why-section" aria-labelledby="why-heading">
+      <div class="container">
+        <p class="section-eyebrow">Why OrthoNow</p>
+        <h2 class="section-title" id="why-heading">Care Designed Around<br>Your Schedule</h2>
+
+        <ul class="features-grid" aria-label="OrthoNow advantages" role="list">
+          <li class="feature-card" role="listitem">
+            <div class="feature-icon-wrap" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div>
+              <div class="feature-title">Same-Day Appointments</div>
+              <div class="feature-desc">Slot confirmed within 2 hours of your request — no weeks-long wait.</div>
+            </div>
+          </li>
+          <li class="feature-card" role="listitem">
+            <div class="feature-icon-wrap" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+            </div>
+            <div>
+              <div class="feature-title">Senior Specialists Only</div>
+              <div class="feature-desc">Every consult is with a consultant orthopaedic surgeon — not a junior doctor.</div>
+            </div>
+          </li>
+          <li class="feature-card" role="listitem">
+            <div class="feature-icon-wrap" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            </div>
+            <div>
+              <div class="feature-title">9 Clinics Across 3 Cities</div>
+              <div class="feature-desc">Bengaluru, Hyderabad, and Chennai — always a clinic near where you live or work.</div>
+            </div>
+          </li>
+          <li class="feature-card" role="listitem">
+            <div class="feature-icon-wrap" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <div>
+              <div class="feature-title">Cashless Insurance</div>
+              <div class="feature-desc">Accepted by all major TPAs — we handle the paperwork so you focus on recovery.</div>
+            </div>
+          </li>
+          <li class="feature-card" role="listitem">
+            <div class="feature-icon-wrap" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            </div>
+            <div>
+              <div class="feature-title">Advanced On-Site Diagnostics</div>
+              <div class="feature-desc">Digital X-ray and MRI coordination at the same clinic — no separate trips.</div>
+            </div>
+          </li>
+          <li class="feature-card" role="listitem">
+            <div class="feature-icon-wrap" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+            </div>
+            <div>
+              <div class="feature-title">WhatsApp Follow-Up</div>
+              <div class="feature-desc">Post-visit care, physio reminders, and prescription support — via WhatsApp.</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ── CLINIC LOCATIONS ── -->
+    <section class="clinics-section" aria-labelledby="clinics-heading">
+      <div class="container">
+        <p class="section-eyebrow">Our locations</p>
+        <h2 class="section-title" id="clinics-heading">9 Clinics. Always Near You.</h2>
+
+        <ul class="clinics-grid" aria-label="List of OrthoNow clinic locations" role="list">
+          <li class="clinic-pill" role="listitem">
+            <svg class="clinic-pill-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div><div>Koramangala</div><span class="clinic-pill-city">Bengaluru</span></div>
+          </li>
+          <li class="clinic-pill" role="listitem">
+            <svg class="clinic-pill-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div><div>Whitefield</div><span class="clinic-pill-city">Bengaluru</span></div>
+          </li>
+          <li class="clinic-pill" role="listitem">
+            <svg class="clinic-pill-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div><div>Jayanagar</div><span class="clinic-pill-city">Bengaluru</span></div>
+          </li>
+          <li class="clinic-pill" role="listitem">
+            <svg class="clinic-pill-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div><div>HSR Layout</div><span class="clinic-pill-city">Bengaluru</span></div>
+          </li>
+          <li class="clinic-pill" role="listitem">
+            <svg class="clinic-pill-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div><div>Banjara Hills</div><span class="clinic-pill-city">Hyderabad</span></div>
+          </li>
+          <li class="clinic-pill" role="listitem">
+            <svg class="clinic-pill-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div><div>Kondapur</div><span class="clinic-pill-city">Hyderabad</span></div>
+          </li>
+          <li class="clinic-pill" role="listitem">
+            <svg class="clinic-pill-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div><div>Secunderabad</div><span class="clinic-pill-city">Hyderabad</span></div>
+          </li>
+          <li class="clinic-pill" role="listitem">
+            <svg class="clinic-pill-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div><div>Adyar</div><span class="clinic-pill-city">Chennai</span></div>
+          </li>
+          <li class="clinic-pill" role="listitem">
+            <svg class="clinic-pill-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div><div>Anna Nagar</div><span class="clinic-pill-city">Chennai</span></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ── SECOND CTA BANNER ── -->
+    <section class="cta-banner" aria-labelledby="cta-banner-heading">
+      <div class="container">
+        <h2 class="cta-banner-title" id="cta-banner-heading">
+          Ready to Move Without Pain?
+        </h2>
+        <p class="cta-banner-body">
+          Don't wait for it to get worse. Talk to a senior orthopaedic
+          specialist today — the first consultation is free.
+        </p>
+        <div class="cta-banner-actions">
+          <button
+            class="btn-cta-primary"
+            id="js-cta-book-btn"
+            aria-label="Scroll to booking form"
+          >
+            Book Free Consultation
+          </button>
+          <a
+            href="tel:+918047094709"
+            class="btn-cta-call"
+            id="js-cta-call-btn"
+            aria-label="Call OrthoNow: 080 4709 4709"
+          >
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.22 2.18 2 2 0 012.18 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 7.09a16 16 0 006 6l.55-.55a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"/>
+            </svg>
+            Call 080 4709 4709
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <!-- /main -->
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-brand">OrthoNow</div>
+      <p class="footer-cities">Bengaluru &nbsp;·&nbsp; Hyderabad &nbsp;·&nbsp; Chennai</p>
+      <nav class="footer-links" aria-label="Footer links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Disclaimer</a>
+        <a href="tel:+918047094709">080 4709 4709</a>
+      </nav>
+      <p class="footer-legal">
+        © 2024 OrthoNow Healthcare Pvt. Ltd. All rights reserved.
+        NABH Accredited. CIN: U85100KA2019PTC123456.
+      </p>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       STICKY MOBILE CTA BAR
+       Visible only on screens narrower than 768px (controlled by CSS).
+  ============================================================ -->
+  <div
+    class="sticky-bar"
+    role="complementary"
+    aria-label="Quick access — book or call"
+  >
+    <button
+      class="btn-sticky-book"
+      id="js-sticky-book-btn"
+      aria-label="Scroll to booking form to book a consultation"
+    >
+      Book Free Consult
+    </button>
+    <a
+      href="tel:+918047094709"
+      class="btn-sticky-call"
+      id="js-sticky-call-btn"
+      aria-label="Call OrthoNow"
+    >
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.22 2.18 2 2 0 012.18 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 7.09a16 16 0 006 6l.55-.55a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"/>
+      </svg>
+      Call Now
+    </a>
+  </div>
+
+  <!-- ============================================================
+       JAVASCRIPT
+       Zero dependencies. All logic self-contained.
+  ============================================================ -->
+  <script>
+    /* ── dataLayer initialisation ── */
+    window.dataLayer = window.dataLayer || [];
+
+    /* ──────────────────────────────────────────────────────────────
+       UTILITY FUNCTIONS
+    ────────────────────────────────────────────────────────────── */
+
+    function getDeviceType() {
+      var w = window.innerWidth;
+      if (w < 768)  return 'mobile';
+      if (w < 1024) return 'tablet';
+      return 'desktop';
+    }
+
+    function getUrlParam(key) {
+      return new URLSearchParams(window.location.search).get(key) || '';
+    }
+
+    function getTrafficSource() {
+      return getUrlParam('utm_source') || 'direct';
+    }
+
+    /* Generates a short reference ID for the thank-you state */
+    function generateRef() {
+      return 'ON-' + Math.random().toString(36).substr(2, 6).toUpperCase();
+    }
+
+    /* ──────────────────────────────────────────────────────────────
+       FORM VALIDATION
+    ────────────────────────────────────────────────────────────── */
+
+    function showError(fieldId, errId, message) {
+      var field = document.getElementById(fieldId);
+      var err   = document.getElementById(errId);
+      field.setAttribute('aria-invalid', 'true');
+      err.textContent = message;
+      err.classList.add('visible');
+    }
+
+    function clearError(fieldId, errId) {
+      var field = document.getElementById(fieldId);
+      var err   = document.getElementById(errId);
+      field.removeAttribute('aria-invalid');
+      err.textContent = '';
+      err.classList.remove('visible');
+    }
+
+    function isValidIndianPhone(raw) {
+      var clean = raw.replace(/[\s\-\(\)\+]/g, '');
+      /* Accepts: 10-digit numbers starting 6-9, optionally prefixed with 91 */
+      return /^(91)?[6-9]\d{9}$/.test(clean);
+    }
+
+    function validate(name, phone, clinic) {
+      var ok = true;
+
+      if (!name || name.trim().length < 2) {
+        showError('f-name', 'f-name-err', 'Please enter your full name.');
+        ok = false;
+      } else {
+        clearError('f-name', 'f-name-err');
+      }
+
+      if (!isValidIndianPhone(phone)) {
+        showError('f-phone', 'f-phone-err', 'Please enter a valid 10-digit Indian mobile number.');
+        ok = false;
+      } else {
+        clearError('f-phone', 'f-phone-err');
+      }
+
+      if (!clinic) {
+        showError('f-clinic', 'f-clinic-err', 'Please select your preferred clinic.');
+        ok = false;
+      } else {
+        clearError('f-clinic', 'f-clinic-err');
+      }
+
+      return ok;
+    }
+
+    /* ──────────────────────────────────────────────────────────────
+       FORM SUBMISSION
+    ────────────────────────────────────────────────────────────── */
+
+    document.getElementById('js-consult-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      var nameVal   = document.getElementById('f-name').value.trim();
+      var phoneVal  = document.getElementById('f-phone').value.trim();
+      var clinicVal = document.getElementById('f-clinic').value;
+
+      if (!validate(nameVal, phoneVal, clinicVal)) return;
+
+      /* Prevent duplicate submission */
+      var submitBtn = document.getElementById('js-submit-btn');
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Submitting…';
+
+      /* ── Push to dataLayer ── */
+      window.dataLayer.push({
+        event:            'consultation_form_submitted',
+        form_id:          'hero_consultation_form',
+        name:             nameVal,
+        phone:            phoneVal,
+        clinic_preference: clinicVal,
+        page_type:        'landing',
+        device_type:      getDeviceType(),
+        traffic_source:   getTrafficSource(),
+        utm_source:       getUrlParam('utm_source'),
+        utm_medium:       getUrlParam('utm_medium'),
+        utm_campaign:     getUrlParam('utm_campaign'),
+        utm_content:      getUrlParam('utm_content'),
+        page_location:    window.location.href,
+        page_title:       document.title
+      });
+
+      /* Console output for demo / QA verification */
+      console.log('[OrthoNow Analytics] window.dataLayer:', window.dataLayer);
+
+      /* ── Swap to thank-you state ── */
+      var firstName = nameVal.split(' ')[0];
+      var ref = generateRef();
+
+      document.getElementById('js-ty-name').textContent   = firstName;
+      document.getElementById('js-ty-phone').textContent  = phoneVal;
+      document.getElementById('js-ty-clinic').textContent = clinicVal;
+      document.getElementById('js-ty-ref').textContent    = ref;
+
+      document.getElementById('js-form-state').style.display      = 'none';
+      document.getElementById('js-thankyou-state').classList.add('active');
+    });
+
+    /* ──────────────────────────────────────────────────────────────
+       SCROLL-TO-FORM (used by sticky bar and second CTA)
+    ────────────────────────────────────────────────────────────── */
+
+    function scrollToForm(buttonLocation) {
+      var formEl = document.getElementById('js-consult-form');
+      if (formEl) {
+        formEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        /* Focus the first field for accessibility */
+        setTimeout(function () {
+          document.getElementById('f-name').focus();
+        }, 500);
+      }
+
+      window.dataLayer.push({
+        event:          'cta_click',
+        button_location: buttonLocation,
+        button_text:    'Book Free Consult',
+        page_type:      'landing',
+        device_type:    getDeviceType(),
+        traffic_source: getTrafficSource()
+      });
+
+      console.log('[OrthoNow Analytics] window.dataLayer:', window.dataLayer);
+    }
+
+    /* ──────────────────────────────────────────────────────────────
+       CALL TRACKING — all click-to-call anchors
+    ────────────────────────────────────────────────────────────── */
+
+    function trackCallClick(buttonLocation) {
+      window.dataLayer.push({
+        event:          'call_now_click',
+        button_location: buttonLocation,
+        phone_number:   '+918047094709',
+        page_type:      'landing',
+        device_type:    getDeviceType(),
+        traffic_source: getTrafficSource(),
+        page_location:  window.location.href
+      });
+      console.log('[OrthoNow Analytics] window.dataLayer:', window.dataLayer);
+    }
+
+    /* Attach listeners */
+    document.getElementById('js-sticky-book-btn').addEventListener('click', function () {
+      scrollToForm('sticky_bar');
+    });
+
+    document.getElementById('js-cta-book-btn').addEventListener('click', function () {
+      scrollToForm('cta_section');
+    });
+
+    document.getElementById('js-header-call').addEventListener('click', function () {
+      trackCallClick('header');
+    });
+
+    document.getElementById('js-cta-call-btn').addEventListener('click', function () {
+      trackCallClick('cta_section');
+    });
+
+    document.getElementById('js-sticky-call-btn').addEventListener('click', function () {
+      trackCallClick('sticky_bar');
+    });
+
+    /* ──────────────────────────────────────────────────────────────
+       PAGE VIEW EVENT — fires on load
+    ────────────────────────────────────────────────────────────── */
+
+    window.dataLayer.push({
+      event:          'page_view',
+      page_type:      'landing',
+      page_title:     document.title,
+      page_location:  window.location.href,
+      device_type:    getDeviceType(),
+      traffic_source: getTrafficSource(),
+      utm_source:     getUrlParam('utm_source'),
+      utm_medium:     getUrlParam('utm_medium'),
+      utm_campaign:   getUrlParam('utm_campaign')
+    });
+
+    console.log('[OrthoNow Analytics] Page load dataLayer:', window.dataLayer);
+  </script>
+
+</body>
+</html>
